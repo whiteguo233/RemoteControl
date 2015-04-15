@@ -1,0 +1,43 @@
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_remote_control_tableLayout"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" 
+    	android:stretchColumns="*"
+    	android:background="@drawable/remote_background"
+    	>
+
+    	<TextView android:id="@+id/fragment_remote_control_selectedTextView"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="2"
+    	    android:gravity="center"
+    	    android:background="@drawable/window"
+    	    android:textColor="#ffffff"
+    	    android:text="0"
+    	    android:textSize="50dp"/>
+    	<TextView android:id="@+id/fragment_remote_control_workingTextView"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="1"
+    	    android:layout_margin="15dp"
+    	    android:background="@drawable/bar"
+    	    android:gravity="center"
+    	    android:text="0"
+    	    android:textStyle="italic"
+    	    android:textSize="20dp"/>
+		<include 
+		    layout="@layout/button_row"
+		    />
+		<include 
+		    layout="@layout/button_row"
+		    />
+		<include 
+		    layout="@layout/button_row"
+		    />
+		<include 
+		    layout="@layout/button_row"
+		    />		
+
+    </TableLayout>
+
